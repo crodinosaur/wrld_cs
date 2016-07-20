@@ -13,4 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require unify/vendor/jquery-migrate.min
+//= require unify/vendor/bootstrap.min
+//= require unify/vendor/back-to-top
+//= require unify/vendor/smoothScroll
+//= require unify/vendor/jquery.plugin
+//= require unify/vendor/jquery.countdown
+//= require unify/vendor/jquery.backstretch.min
+//= require unify/custom
 //= require_tree .
