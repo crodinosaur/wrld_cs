@@ -3,25 +3,24 @@
 	<div class="row">
 		<div class="col-md-2 coming-soon"></div>
 		<div class="col-md-8 coming-soon">
-			<%= image_tag "WRLD_logo.png", size: "189x55" %>
-			<h1>Coming Soon</h1>
+			<%= image_tag "WRLD_logo1.png", size: "228x88" %><br>
 			<p>WRLD is a video-based online competition platform that brings together friends and competitors from all over the world to showcase their skills, meet like-minded people and above all, have fun!</p><br>
-			
-			<div class="input-group col-md-4 col-md-offset-4">
-				<%= form_for(@email, url: root_path) do |e| %>
-					<%= e.text_field :email, class: "form-control", placeholder: "Your Email" %>	
-					<%= e.submit "Subscribe", class: "btn-u" %>
-				<% end %>
-			</div>
-
-<!-- 		<form>
-				<div class="input-group col-md-4 col-md-offset-4">
-					<input type="text" class="form-control" placeholder="Your Email">
-					<span class="input-group-btn">
-						<button class="btn-u" type="button">Subscribe</button>
-					</span>
+			<h1>Coming Soon</h1>			
+			<%= form_for(@email, url: root_path) do |f| %>
+				<div class="input-group col-md-6 col-md-offset-3">
+						<%= f.text_field :email, class: "form-control", placeholder: "Your Email" %>	
+						<span class="input-group-btn">
+							<%= f.submit "Subscribe", class: "btn-u" %>
+						</span>		
 				</div>
-			</form> -->
+			<% end %><br>
+			<div class="input-group col-md-6 col-md-offset-3">
+				<% flash.each do |key,value| %>
+					<div class="alert alert-<%= key %>">
+						<%= value %>
+					</div>
+				<% end %>			
+			</div>
 		</div>
 		<div class="col-md-2 coming-soon"></div>
 	</div>
@@ -47,7 +46,7 @@
 <!-- Background Slider (Backstretch) -->
 <script>
 	$.backstretch([
-		"/assets/white_bricks.jpg"
+		"/assets/baby-pushups5.png"
 		], {
 			fade: 1000,
 			duration: 7000

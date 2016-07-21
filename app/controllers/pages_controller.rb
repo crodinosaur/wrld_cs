@@ -9,7 +9,7 @@ class PagesController < ApplicationController
       flash[:success] = "Thank you for subscribing!"
       redirect_to root_path
   	else
-  	  flash[:warning] = "Your email could not be saved!"
+  	  flash[:danger] = "Your email could not be saved. Please try again."
   	  redirect_to root_path
     end
 
