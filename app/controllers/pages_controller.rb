@@ -7,8 +7,9 @@ class PagesController < ApplicationController
   	@email = Email.new(email_params)
   	if @email.save
       flash[:success] = "Thank you for subscribing!"
-      redirect_to subscribed_path
+      redirect_to root_path
   	else
+  	  flash[:warning] = "Your email could not be saved!"
   	  redirect_to root_path
     end
 

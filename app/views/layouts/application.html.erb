@@ -15,6 +15,11 @@
     <%= csrf_meta_tags %>
   </head>
 
+  <% flash.each do |key,value| %>
+    <div class="alert alert-<%= key %>">
+      <%= value %>
+    </div>
+  <% end %>
   <body class="coming-soon-page">
     <%= yield %>
   </body>
