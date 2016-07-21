@@ -15,12 +15,25 @@
     <%= csrf_meta_tags %>
   </head>
 
-  <% flash.each do |key,value| %>
-    <div class="alert alert-<%= key %>">
-      <%= value %>
-    </div>
-  <% end %>
+
   <body class="coming-soon-page">
-    <%= yield %>
+    <div class="coming-soon-border"></div>
+    <div class="coming-soon-bg-cover"></div>
+
+    <!--=== Content Part ===-->
+    <div class="container coming-soon-content valign__middle">
+    <% flash.each do |key,value| %>
+      <div class="alert alert-<%= key %>">
+        <%= value %>
+      </div>
+    <% end %>
+      <%= yield %>
+    </div><!--/container-->
+    <!--=== Sticky Footer ===-->
+    <div class="sticky-footer">
+      <p class="copyright-space">
+        2016 &copy; WRLD. ALL Rights Reserved.
+      </p>
+    </div>
   </body>
 </html>
