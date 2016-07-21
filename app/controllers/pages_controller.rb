@@ -13,9 +13,6 @@ class PagesController < ApplicationController
   	  redirect_to root_path
     end
 
-  def show
-  end
-
   end
 
   private
