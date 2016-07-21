@@ -9,9 +9,15 @@
 /*Import Global Compulsory CSS Files*/
 @import url(app.css);
 @import url(blocks.css);
+@import url(bootstrap.css.scss);
+@import url(font-awesome.css.scss);
+@import url(page_coming_soon.css);
+@import url(line-icons.css);
+@import url(blue.css);
 
 /*Import CSS Plugins*/
-/*@import url(plugins/style-switcher.css);*/
+@import url(style-switcher.css);
+@import url(animate.css);
 
 * {
 	border-radius: 0;
