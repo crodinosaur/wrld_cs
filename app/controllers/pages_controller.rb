@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  def new
+  def home
   	@email = Email.new
   end
 
