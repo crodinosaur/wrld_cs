@@ -7,14 +7,14 @@
 			<p>WRLD is a video-based online and mobile competition platform that brings together friends and competitors from all over the world to showcase their skills, meet like-minded people and above all, have fun!</p><br>
 						
 			<%= form_for(@email, url: root_path) do |f| %>
-				<div class="input-group col-xs-8 col-md-6 col-xs-offset-2 col-md-offset-3">
+				<div class="input-group col-md-6 col-md-offset-3">
 						<%= f.text_field :email, class: "form-control", placeholder: "Your Email" %>	
 						<span class="input-group-btn">
 							<%= f.submit "Subscribe", class: "btn-u" %>
 						</span>		
 				</div>
 			<% end %><br>
-			<div class="input-group col-xs-8 col-md-6 col-xs-offset-2 col-md-offset-3">
+			<div class="input-group col-md-6 col-md-offset-3">
 				<% flash.each do |key,value| %>
 					<div class="alert alert-<%= key %>">
 						<%= value %>
