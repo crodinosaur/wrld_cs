@@ -3,9 +3,9 @@
 	<div class="row">
 		<div class="col-md-2 coming-soon"></div>
 		<div class="col-md-8 coming-soon">
-			<%= image_tag "WRLD_logo1.png", size: "228x88" %><br>
-			<p>WRLD is a video-based online competition platform that brings together friends and competitors from all over the world to showcase their skills, meet like-minded people and above all, have fun!</p><br>
-			<h1>Coming Soon</h1>			
+			<%= image_tag "Wrld-bauhaus3.png", size: "324x132" %><br>
+			<p>WRLD is a video-based online and mobile competition platform that brings together friends and competitors from all over the world to showcase their skills, meet like-minded people and above all, have fun!</p><br>
+						
 			<%= form_for(@email, url: root_path) do |f| %>
 				<div class="input-group col-md-6 col-md-offset-3">
 						<%= f.text_field :email, class: "form-control", placeholder: "Your Email" %>	
@@ -19,8 +19,9 @@
 					<div class="alert alert-<%= key %>">
 						<%= value %>
 					</div>
-				<% end %>			
+				<% end %>
 			</div>
+			<h1>Coming Soon</h1>				
 		</div>
 		<div class="col-md-2 coming-soon"></div>
 	</div>
@@ -52,7 +53,7 @@
 <!-- Background Slider (Backstretch) -->
 <script>
 	$.backstretch([
-		"/assets/baby-pushups5.png"
+		"/assets/baby-pushups7.png"
 		], {
 			fade: 1000,
 			duration: 7000
