@@ -9,6 +9,6 @@ class Email < ApplicationRecord
 
 	def send_email
 		# send email
-		EmailMailer.email_user(self).deliver_now
+		EmailMailer.email_user(self).deliver
 	end
 end
