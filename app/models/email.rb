@@ -4,11 +4,9 @@ class Email < ApplicationRecord
 									format: { with: VALID_EMAIL_REGEX }, 
 									uniqueness: { case_sensitive: false }
 
-
-	after_create :send_email
+	# after_create :send_email
 
 	def send_email
-		# send email
-		EmailMailer.email_user(self).deliver
+		EmailMailer.email_user(self).deliver # send email
 	end
 end
