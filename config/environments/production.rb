@@ -27,6 +27,21 @@ Rails.application.configure do
   config.assets.compile = true
   config.assets.digest = true
 
+
+  #mailer settings
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default :charset => "utf-8"
+
+  config.action_mailer.smtp_settings = {
+      :address   => "smtp.mandrillapp.com",
+      :port      => 587,
+      :user_name => "WRLD",
+      :password  => ENV['MANDRILL_API_KEY'],
+  }
+  config.action_mailer.default_url_options = { :host => 'wrldchamp.com' }
+  
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
